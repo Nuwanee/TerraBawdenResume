@@ -5,7 +5,7 @@ export default function MyResume() {
     return (
         <>
             <div className={"header-card"}>
-                <div className={"section-card"}>
+                <div className={"section-card image-container"}>
                     <img className={"portrait-img"} src={"portrait.jpg"} alt={"Portrait Image"}/>
                 </div>
                 <div className={"section-card"}>
@@ -116,16 +116,14 @@ export default function MyResume() {
             <div className={"section-card"}>
                 <h2>Hobbies and Interests</h2>
 
-                <table>
-                    <tr>
-                        <td>Weightlifting</td>
-                        <td>Automobile Maintenance</td>
-                        <td>Ethics & Philosophy</td>
-                        <td>Gaming</td>
-                        <td>Creative Arts</td>
-                        <td>Travel</td>
-                    </tr>
-                </table>
+                <ul>
+                    <li>Weightlifting</li>
+                    <li>Automobile Maintenance</li>
+                    <li>Ethics & Philosophy</li>
+                    <li>Gaming</li>
+                    <li>Creative Arts</li>
+                    <li>Travel</li>
+                </ul>
             </div>
 
         </>
