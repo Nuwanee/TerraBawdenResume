@@ -1,0 +1,67 @@
+h1, h2 {
+    margin: 0.25rem 0.25rem 0.5rem 0.25rem;
+    color: var(--text-h);
+}
+
+h3 {
+    margin: 1rem 0.25rem 0.5rem 0.25rem;
+    border-top: 1px solid var(--accent-border);
+    padding-top: 0.5rem;
+}
+
+h4 {
+    margin: 1rem 0 0.5rem 0;
+
+}
+
+a, p, ul {
+    margin: 0;
+}
+
+table {
+    margin: 2rem;
+}
+
+td {
+    padding: 0.5rem;
+    border-top: 1px solid var(--accent-border);
+}
+
+.ar {
+    text-align: left;
+    font-weight: bold;
+    border-right: 1px solid var(--accent-border);
+    padding-right: 1rem;
+}
+
+.section-card {
+    border: 1px solid var(--accent-border);
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    background-color: var(--accent-bg);
+}
+
+img {
+    max-width: 10rem;
+}
+
+.header-card {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.date-chip {
+    background-color: var(--code-bg);
+    font-style: italic;
+    max-width: max-content;
+    min-width: 0;
+    padding: 2px 8px 2px 8px;
+    border-radius: 5px;
+    border: 1px solid var(--accent-border);
+}
+
+.explanation {
+    font-style: italic;
+}
