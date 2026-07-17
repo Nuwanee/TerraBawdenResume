@@ -34,6 +34,10 @@ td {
     padding-right: 1rem;
 }
 
+.website-header {
+    width: 100%;
+}
+
 .section-card {
     border: 1px solid var(--accent-border);
     padding: 0.75rem;
@@ -41,33 +45,6 @@ td {
     border-radius: 10px;
     background-color: var(--accent-bg);
     opacity: 90%;
-    width: 100%;
-}
-
-.header-card {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    align-items: center;
-}
-
-.portrait-img {
-    width: 10rem;
-}
-
-.banner-img {
-    display: flex;
-    justify-content: flex-end;
-    background-image: url(../public/banner.jpg);
-    background-repeat: no-repeat;
-    height: 40vh;
-    overflow: hidden;
-    background-size: cover;
-    width: 100%;
-    opacity: 75%;
-    filter: brightness(110%);
-    box-shadow: 0 0 3px 3px var(--bg) inset;
-    margin: 2rem 0 2rem 0;
 }
 
 .date-chip {

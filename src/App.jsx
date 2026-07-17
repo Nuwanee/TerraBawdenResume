@@ -3,14 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-import MyResume from './resume_contents.jsx'
+import MyResume from './components/resume_contents.jsx'
+import ImageBanner from './components/header.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-        <div className={"banner-img"}></div>
+        <ImageBanner className={"website-header"}/>
         <MyResume />
 
       {/*<section id="center">*/}

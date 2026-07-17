@@ -4,22 +4,17 @@ export default function MyResume() {
 
     return (
         <>
-            <div className={"header-card"}>
-                <img src={'portrait.jpg'} className={"portrait-img"} alt="Portrait Image" />
+            <div className={"section-card"}>
+                <h1>Terra Nuwanee Bawden</h1>
+                <p className={"explanation"}>Engineer, focusing on the application of ethics to software, systems, and innovation.</p>
+                <br/>
 
-                <div className={"section-card"}>
-                    <h1>Terra Nuwanee Bawden</h1>
-                    <p className={"explanation"}>Engineer, focusing on the application of ethics to software, systems, and innovation.</p>
-                    <br/>
-
-                    <a href={"https://www.linkedin.com/in/terra-nuwanee-bawden"}>
-                        View My LinkedIn Profile
-                    </a>
-                    <p>tnuwaneeb@gmail.com</p>
-                    <p>865-236-9471</p>
-                </div>
+                <a href={"https://www.linkedin.com/in/terra-nuwanee-bawden"}>
+                    View My LinkedIn Profile
+                </a>
+                <p>tnuwaneeb@gmail.com</p>
+                <p>865-236-9471</p>
             </div>
-
 
             <div className={"section-card"}>
                 <h2>Experience</h2>
