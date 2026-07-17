@@ -4,7 +4,7 @@ export default function MyResume() {
         <>
             <div className={"section-card"}>
                 <h1>Terra Nuwanee Bawden</h1>
-                <p className={"explanation"}>Engineer, focusing on the application of ethics to software, systems, and innovation.</p>
+                <p className={"explanation"}>Ethical Engineer, focusing on the application of ethics to software, systems, and innovation.</p>
                 <br/>
 
                 <a href={"https://www.linkedin.com/in/terra-nuwanee-bawden"}>
