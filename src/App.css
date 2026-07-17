@@ -47,12 +47,23 @@ td {
     background-color: var(--bg);
 }
 
-img {
+.portrait-img {
     max-width: 10rem;
     opacity: 75%;
     border-radius: 50%;
     filter: brightness(110%);
     box-shadow: 2px 2px 1px var(--accent-bg);
+
+}
+
+.banner-img {
+    max-height: 20vh;
+    min-height: 10rem;
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
 
 }
 
