@@ -5,9 +5,8 @@ export default function MyResume() {
     return (
         <>
             <div className={"header-card"}>
-                <div className={"section-card image-container"}>
-                    <img className={"portrait-img"} src={"portrait.jpg"} alt={"Portrait Image"}/>
-                </div>
+                <img src={'portrait.jpg'} className={"portrait-img"} alt="Portrait Image" />
+
                 <div className={"section-card"}>
                     <h1>Terra Nuwanee Bawden</h1>
                     <p className={"explanation"}>Engineer, focusing on the application of ethics to software, systems, and innovation.</p>

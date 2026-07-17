@@ -10,9 +10,7 @@ function App() {
 
   return (
     <>
-        <div className={"banner"}>
-            <img className={"banner-img"} src={"banner.jpg"} alt={"Banner Image"}></img>
-        </div>
+        <div className={"banner-img"}></div>
         <MyResume />
 
       {/*<section id="center">*/}

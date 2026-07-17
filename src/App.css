@@ -40,37 +40,34 @@ td {
     margin-bottom: 1rem;
     border-radius: 10px;
     background-color: var(--accent-bg);
-}
-
-.image-container {
-    border: 0;
-    background-color: var(--bg);
-}
-
-.portrait-img {
-    max-width: 10rem;
-    opacity: 75%;
-    border-radius: 50%;
-    filter: brightness(110%);
-    box-shadow: 2px 2px 1px var(--accent-bg);
-
-}
-
-.banner-img {
-    max-height: 20vh;
-    min-height: 10rem;
-    overflow: hidden;
-    object-fit: cover;
+    opacity: 90%;
     width: 100%;
-    align-items: center;
-    margin: 2rem 0 2rem 0;
-
 }
 
 .header-card {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
+    align-items: center;
+}
+
+.portrait-img {
+    width: 10rem;
+}
+
+.banner-img {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(../public/banner.jpg);
+    background-repeat: no-repeat;
+    height: 40vh;
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    opacity: 75%;
+    filter: brightness(110%);
+    box-shadow: 0 0 3px 3px var(--bg) inset;
+    margin: 2rem 0 2rem 0;
 }
 
 .date-chip {
