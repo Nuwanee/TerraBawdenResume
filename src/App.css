@@ -1,6 +1,7 @@
 h1, h2 {
     margin: 0.25rem 0.25rem 0.5rem 0.25rem;
     color: var(--text-h);
+    text-shadow: 2px 2px 0 var(--shadow), 1px 1px 3px var(--border);
 }
 
 h3 {
@@ -56,6 +57,7 @@ td {
     padding: 2px 8px 2px 8px;
     border-radius: 5px;
     border: 1px solid var(--border);
+    box-shadow: 2px 2px 1px var(--shadow), 1px 1px 3px var(--border);
 }
 
 .explanation {
