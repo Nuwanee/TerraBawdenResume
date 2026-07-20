@@ -13,9 +13,12 @@
 
 
 	img {
-		width: clamp(100px, 20%, 100%);
+		width: clamp(100px, 15%, 100%);
 		height: auto;
         box-shadow: 1px 1px 3px var(--bg);
+        border-style: outset;
+        border-width: 2px;
+        border-color: var(--border);
 	}
 }
 
@@ -26,9 +29,10 @@
 	min-height: 150px;
     width: 100%;
 	overflow: hidden;
+    border-radius: 10px;
 
     img {
-        opacity: 70%;
+        opacity: 90%;
         width: 100%;
     }
 }
