@@ -8,6 +8,7 @@
     --shadow: black;
 
     --primary: "Courier", serif;
+    --header: "Caveat", cursive;
 
     font: 110% var(--primary);
     color-scheme: dark;

@@ -1,7 +1,13 @@
 h1, h2 {
+    font: 300% var(--header);
+    letter-spacing: 1px;
     margin: 0.25rem 0.25rem 0.5rem 0.25rem;
     color: var(--text-h);
     text-shadow: 2px 2px 0 var(--shadow), 1px 1px 3px var(--border);
+}
+
+h2 {
+    font-size: 200%;
 }
 
 h3 {
