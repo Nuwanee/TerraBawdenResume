@@ -2,9 +2,10 @@
     --text: #9EC5AB;
     --text-h: #FFC857;
     --bg: #16171d;
-    --code-bg: #002400;
+    --chip-bg: #002400;
     --accent-bg: #111611;
     --border: #83BCA9;
+    --shadow: black;
 
     --primary: "Courier", serif;
 
