@@ -16,9 +16,7 @@
 		width: clamp(100px, 15%, 100%);
 		height: auto;
         box-shadow: 1px 1px 2px var(--shadow), 2px 2px 4px var(--accent-bg);
-        border-style: outset;
-        border-width: 2px;
-        border-color: var(--border);
+        border: 2px outset var(--accent-border);
 	}
 }
 

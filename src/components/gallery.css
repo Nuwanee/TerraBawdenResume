@@ -3,15 +3,17 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery-img {
     margin: 1rem;
     max-width: 30%;
     object-fit: contain;
+    height: min-content;
+    box-shadow: 2px 2px 4px var(--shadow), 2px 2px 4px var(--accent-bg);
+    border: 5px solid var(--accent-border);
 
-    img {
-
-    }
 }
 
