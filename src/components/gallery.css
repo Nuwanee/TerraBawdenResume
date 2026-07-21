@@ -1,10 +1,11 @@
 .gallery {
-    margin: 1rem 0 1rem 0;
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 1rem 0 1rem 0;
 }
 
 .gallery-img {
@@ -36,7 +37,6 @@
 }
 
 .gallery-img:hover {
-    transform: scale(1.5);
-    box-shadow: 2px 2px 4px var(--shadow), 3px 3px 10px var(--accent-bg);
+    transform: scale(1.05);
 }
 

@@ -68,8 +68,10 @@ export default function ImageGallery() {
 
         <div className={"gallery"}>
             {images.map(image => (
-                <img className={"gallery-img gallery-" + getSize(image)} src={"gallery/" + image.src}
-                     alt={"Gallery Image"}/>
+                <img className={"gallery-img gallery-" + getSize(image)}
+                     src={"gallery/" + image.src}
+                     alt={"Gallery Image"}
+                />
             ))}
         </div>
     )

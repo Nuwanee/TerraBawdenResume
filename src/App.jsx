@@ -17,7 +17,8 @@ function Home() {
 function Gallery() {
     return (
         <>
-            <ImageBanner className={"website-header"} />
+            <br/>
+            <h1>Gallery</h1>
             <ImageGallery />
         </>
 
