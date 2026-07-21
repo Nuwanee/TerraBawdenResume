@@ -19,10 +19,8 @@ export default function ImageGallery() {
     const photos = [
         "portrait4.jpg",
         "bubbles.jpg",
-
         "bridge.jpg",
         "cherry-tree.jpg",
-
         "deadlift.gif",
         "jeep.jpg",
         "wiper-motor.jpg",
@@ -56,19 +54,48 @@ export default function ImageGallery() {
     }
 
     useEffect(() => {
-        async function loadImages() {
-            const loaded = await Promise.all(photos.map(loadSize));
-            setImages(loaded);
+
+        let cancelled = false;
+
+        function loadImages() {
+            photos.forEach(async (photo) => {
+                const loaded = await loadSize(photo);
+
+                if (!cancelled) {
+                    setImages(prev => {
+                        // avoid duplicates if the same image loads twice
+                        if (prev.some(img => img.src === loaded.src)) {
+                            return prev;
+                        }
+
+                        return [...prev, loaded];
+                    });
+                }
+            });
         }
 
         loadImages();
-    }, []);
+
+        return () => {
+            cancelled = true;
+        };
+    }, [photos]);
+
+    // useEffect(() => {
+    //     async function loadImages() {
+    //         const loaded = await Promise.all(photos.map(loadSize));
+    //         setImages(loaded);
+    //     }
+    //
+    //     loadImages();
+    // }, []);
 
     return (
 
         <div className={"gallery"}>
             {images.map(image => (
-                <img className={"gallery-img gallery-" + getSize(image)}
+                <img key={image.src}
+                     className={"gallery-img gallery-" + getSize(image)}
                      src={"gallery/" + image.src}
                      alt={"Gallery Image"}
                 />

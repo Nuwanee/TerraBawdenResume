@@ -12,8 +12,8 @@
     margin: 0.5rem 1rem 0.5rem 1rem;
     display: flex;
     flex-basis: auto;
-    box-shadow: 2px 2px 4px var(--shadow), 2px 2px 4px var(--accent-bg);
-    border: 10px solid var(--accent-border);
+    box-shadow: 3px 3px 4px var(--shadow), 5px 5px 0 var(--accent-border);
+    border: 5px solid var(--accent-border);
 }
 
 .gallery-xn {
