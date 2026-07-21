@@ -8,7 +8,7 @@
 }
 
 .gallery-img {
-    margin: 1rem;
+    margin: 0.5rem 1rem 0.5rem 1rem;
     display: flex;
     flex-basis: auto;
     box-shadow: 2px 2px 4px var(--shadow), 2px 2px 4px var(--accent-bg);
@@ -33,5 +33,10 @@
 
 .gallery-xw {
     width: 45%;
+}
+
+.gallery-img:hover {
+    transform: scale(1.5);
+    box-shadow: 2px 2px 4px var(--shadow), 3px 3px 10px var(--accent-bg);
 }
 
