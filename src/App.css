@@ -24,6 +24,7 @@ h4 {
 .navbar {
     text-align: right;
     margin: 1rem 0 0.5rem 0;
+    padding-right: 5%;
 }
 
 a, p, ul {
