@@ -2,11 +2,12 @@ import './App.css'
 import MyResume from './components/resume_contents.jsx'
 import ImageBanner from './components/header.jsx'
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
+import ImageGallery from "./components/gallery.jsx";
 
 function Home() {
     return (
         <>
-            <ImageBanner className={"website-header"}/>
+            <ImageBanner className={"website-header"} />
             <MyResume/>
         </>
 
@@ -16,7 +17,8 @@ function Home() {
 function Gallery() {
     return (
         <>
-            <ImageBanner className={"website-header"}/>
+            <ImageBanner className={"website-header"} />
+            <ImageGallery />
         </>
 
     )
@@ -34,7 +36,7 @@ function App() {
 
             <Routes>
                 <Route path={"/"} element={<Home/>}/>
-                <Route path={"/gallery"} element={<Gallery/>}/>
+                <Route path={"/gallery"} element={<Gallery />}/>
             </Routes>
 
         </BrowserRouter>
