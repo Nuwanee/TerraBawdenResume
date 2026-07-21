@@ -93,13 +93,17 @@ export default function ImageGallery() {
     return (
 
         <div className={"gallery"}>
+            <img className={"line"} src={"gallery/line.svg"} alt={"Line"} />
             {images.map(image => (
+
                 <img key={image.src}
                      className={"gallery-img gallery-" + getSize(image)}
                      src={"gallery/" + image.src}
                      alt={"Gallery Image"}
+                     style={{rotate: `${Math.random() * 9 - 4}deg`}}
                 />
             ))}
+            <img className={"line"} src={"gallery/line.svg"} alt={"Line"} />
         </div>
     )
 }
