@@ -1,27 +1,76 @@
 import './gallery.css'
+import {useEffect, useState} from "react";
+
+function getSize(image) {
+    const w = image.width;
+    const h = image.height;
+
+    if (w > h * 1.4) return "xw";
+    if (w > h) return "w";
+    if (h > w * 1.4) return "xn";
+    if (h > w) return "n";
+    return "m";
+
+}
 
 export default function ImageGallery() {
+    const [images, setImages] = useState([]);
+
+    const photos = [
+        "portrait4.jpg",
+        "bubbles.jpg",
+
+        "bridge.jpg",
+        "cherry-tree.jpg",
+
+        "deadlift.gif",
+        "jeep.jpg",
+        "wiper-motor.jpg",
+        "flex-pose.jpg",
+        "mist.jpg",
+        "ocean.jpg",
+        "ohio-flower.jpg",
+        "portrait3.jpg",
+        "rowena.jpg",
+        "pittock-pose.jpg",
+        "tree-painting.jpg",
+        "mug.jpg",
+        "portrait2.jpg",
+    ];
+
+    function loadSize(src) {
+        return new Promise((resolve, reject) => {
+            const image = new Image();
+
+            image.onload = () => {
+                resolve({
+                    src,
+                    width: image.naturalWidth,
+                    height: image.naturalHeight,
+                });
+            };
+
+            image.onerror = reject;
+            image.src = "gallery/" + src;
+        });
+    }
+
+    useEffect(() => {
+        async function loadImages() {
+            const loaded = await Promise.all(photos.map(loadSize));
+            setImages(loaded);
+        }
+
+        loadImages();
+    }, []);
 
     return (
 
         <div className={"gallery"}>
-            <img className={"gallery-img"} src={"portrait2.jpg"} alt={"Gallery Image"} />
-            <img className={"gallery-img"} src={"bubbles.jpg"} alt={"Gallery Image"} />
-            <img className={"gallery-img"} src={"portrait3.jpg"} alt={"Gallery Image"} />
-            <img className={"gallery-img"} src={"bridge.jpg"} alt={"Gallery Image"} />
-            <img className={"gallery-img"} src={"cherry-tree.jpg"} alt={"Gallery Image"} />
-            <img className={"gallery-img"} src={"deadlift.jpg"} alt={"Gallery Image"} />
-            <img className={"gallery-img"} src={"ocean.jpg"} alt={"Gallery Image"} />
-            <img className={"gallery-img"} src={"flex-pose.jpg"} alt={"Gallery Image"} />
-            <img className={"gallery-img"} src={"jeep.jpg"} alt={"Gallery Image"} />
-            <img className={"gallery-img"} src={"mist.jpg"} alt={"Gallery Image"} />
-            <img className={"gallery-img"} src={"mug.jpg"} alt={"Gallery Image"} />
-            <img className={"gallery-img"} src={"ohio-flower.jpg"} alt={"Gallery Image"} />
-            <img className={"gallery-img"} src={"pittock-pose.jpg"} alt={"Gallery Image"} />
-            <img className={"gallery-img"} src={"rowena.jpg"} alt={"Gallery Image"} />
-            <img className={"gallery-img"} src={"portrait4.jpg"} alt={"Gallery Image"} />
-            <img className={"gallery-img"} src={"tree-painting.jpg"} alt={"Gallery Image"} />
-            <img className={"gallery-img"} src={"wiper-motor.jpg"} alt={"Gallery Image"} />
+            {images.map(image => (
+                <img className={"gallery-img gallery-" + getSize(image)} src={"gallery/" + image.src}
+                     alt={"Gallery Image"}/>
+            ))}
         </div>
     )
 }

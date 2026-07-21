@@ -8,11 +8,11 @@ export default function ImageBanner() {
             <div className="image-stack">
 
                 <div className="image-stack-item portrait">
-                    <img src={'portrait.jpg'} alt="Website Portrait"/>
+                    <img src={'home/portrait.jpg'} alt="Website Portrait"/>
                 </div>
 
                 <div className="image-stack-item banner">
-                    <img src={'banner.jpg'} alt="Website Banner Image"/>
+                    <img src={'home/banner.jpg'} alt="Website Banner Image"/>
                 </div>
 
             </div>

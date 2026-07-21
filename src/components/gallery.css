@@ -9,11 +9,29 @@
 
 .gallery-img {
     margin: 1rem;
-    max-width: 30%;
-    object-fit: contain;
-    height: min-content;
+    display: flex;
+    flex-basis: auto;
     box-shadow: 2px 2px 4px var(--shadow), 2px 2px 4px var(--accent-bg);
     border: 10px solid var(--accent-border);
+}
 
+.gallery-xn {
+    width: 15%;
+}
+
+.gallery-n {
+    width: 20%;
+}
+
+.gallery-m {
+    width: 25%;
+}
+
+.gallery-w {
+    width: 30%;
+}
+
+.gallery-xw {
+    width: 45%;
 }
 
