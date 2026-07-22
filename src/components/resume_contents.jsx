@@ -21,19 +21,19 @@ export default function MyResume() {
                 <h3>SmartRealtyAI</h3>
                 <h4>Full Stack Software Engineer</h4>
                 <p className={"date-chip"}>August 2025 - May 2026</p>
-                <h4>Description:</h4>
+                <br/>
                 <p>Worked as part of a small team to design, implement, test, and deploy a complete end-to-end website by working directly with the client using Agile methodologies, including: python backend on Render, React frontend on Vercel, various external API integrations, a proprietary machine learning model configuration, security, and more.</p>
 
                 <h3>Wright Business Graphics</h3>
                 <h4>Application Developer</h4>
                 <p className={"date-chip"}>January 2023 - May 2026</p>
-                <h4>Description:</h4>
+                <br/>
                 Maintained and adhered to strict data security procedures, including SOC2 and HIPAA compliance. Developed, tested, and conducted quality assurance reviews on client-driven software applications.Translated complicated technical information into clear, understandable terms for clients.
 
                 <h3>SkyPoint Cloud</h3>
                 <h4>Data Analytics Consultant</h4>
                 <p className={"date-chip"}>March 2022 - November 2022</p>
-                <h4>Description:</h4>
+                <br/>
                 Assisted in project management of and provided expert consultation on the use of R, Python, Git, and Microsoft Power BI to achieve actionable business insights.Developed and taught data analytics and Power BI curriculum, addressing client-specific needs and queries.Communicated directly with clients to understand requirements and provided tailored data solutions leveraging additional tools such as Microsoft Power Platform, Databricks, and Snowflake.
             </div>
 
