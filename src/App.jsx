@@ -30,8 +30,8 @@ function App() {
     return (
         <BrowserRouter>
             <nav className={"navbar"}>
-                <Link to={"/"}>Home</Link> | {" "}
-                <Link to={"/gallery"}>Gallery</Link>
+                <Link className={"nav-button"} to={"/"}>Home</Link>
+                <Link className={"nav-button"} to={"/gallery"}>Gallery</Link>
 
             </nav>
 

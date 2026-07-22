@@ -1,4 +1,4 @@
-h1, h2 {
+h1, h2, .nav-button {
     font: 300% var(--header);
     letter-spacing: 1px;
     margin: 0.25rem 0.25rem 0.5rem 0.25rem;
@@ -74,4 +74,10 @@ td {
 
 .explanation {
     font-style: italic;
+}
+
+.nav-button {
+    font-size: 30pt;
+    margin-left: 2rem;
+    text-decoration: none;
 }
